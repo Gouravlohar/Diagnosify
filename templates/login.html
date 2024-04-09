@@ -1,0 +1,60 @@
+{% extends "main.html" %}
+
+{% block title %} <title>Login</title> {% endblock %}
+
+{% block content %}
+<div class="container" style="margin-top: 10rem;">
+    <div class="row justify-content-center">
+        <div class="col-lg-5">
+            <h2 class="text-center mt-4">Login</h2>
+            <form>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password">
+                </div>
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-pink btn-sm comic-button">Login</button>
+                </div>
+                <style>
+                    .comic-button {
+                        display: inline-block;
+                        padding: 5px 10px; /* reduced padding */
+                        font-size: 14px; /* reduced font-size */
+                        font-weight: bold;
+                        text-align: center;
+                        text-decoration: none;
+                        color: #fff;
+                        background-color: #ec4d67;
+                        border: 2px solid #000;
+                        border-radius: 10px;
+                        box-shadow: 5px 5px 0px #000;
+                        transition: all 0.3s ease;
+                        cursor: pointer;
+                    }
+                    
+                    .comic-button:hover {
+                        background-color: #fff;
+                        color: #ec4d67;
+                        border: 2px solid #ec4d67;
+                        box-shadow: 5px 5px 0px #ec4d67;
+                    }
+                    
+                    .comic-button:active {
+                        background-color: #fcf414;
+                        box-shadow: none;
+                        transform: translateY(4px);
+                    }
+                    </style>
+                <div class="text-center mt-3">
+                    <small>Don't have an account? <a href="/register">Register here</a></small>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+{% block navbar %}{% endblock %}
