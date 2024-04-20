@@ -1,1 +1,1 @@
-Flask app
+Flask app + Logistic Regression 
